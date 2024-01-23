@@ -1,85 +1,68 @@
-# Project Demo
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-[![Alt text](https://img.youtube.com/vi/lXk14qt2D28/0.jpg)](https://www.youtube.com/watch?v=lXk14qt2D28)
+## Available Scripts
 
-## Getting Started
+In the project directory, you can run:
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+### `npm start`
 
-### Prerequisites
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-NPM / Yarn and Node.js installed
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-### .env
+### `npm test`
 
-In the server > .env file, you can find some information. Please use your own API key for future use, as this key may not work in the future.
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-```
-BRAINTREE_MERCHANT_ID=your_id
-BRAINTREE_PUBLIC_KEY=your_public_key
-BRAINTREE_PRIVATE_KEY=your_private_key
-```
+### `npm run build`
 
-### Installing
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Installing NPM modules on both client and server folders
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
 
-Execute these commands from the project directory
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-```
-cd client && npm install
-```
+### `npm run eject`
 
-```
-cd server && npm install
-```
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-### Running the app
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Open a terminal on server directory
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-```
-npm run start:dev
-```
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-and open another terminal on client directory
+## Learn More
 
-```
-npm run start
-```
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-Access the web app at http://localhost:3000/
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Deploying the backend server to render
+### Code Splitting
 
-Follow these setps 👇👇
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-1. Create your render account in https://render.com/
-2. Connect your github to render and give the project permission for that
-3. Then create a new Web Service and add your repo (your repo must be look like this repo's folder structure like frontend and backend both in that repo)
-4. For deploying this, every change will be in this `render-deploy-backend` branch. So don't change your `.evn` from master branch.
-5. You have to change your database to local to mongodb atlas. Because in this deployment we are not creating db server. So we will be using mongo atlas url. So find your mongodb cloud url with database which will look like this: `mongodb+srv://myusername:myclusterpassword@mycluster.mongodb.net/ecommerce?retryWrites=true&w=majority`
-   and
-   <b>goto the `render-deploy-backend` branch</b>
-   and goto `.env` file and replace the first variable to your latest mongodb cloud url like this:
-   `DATABASE=mongodb+srv://myusername:myclusterpassword@mycluster.mongodb.net/ecommerce?retryWrites=true&w=majority`
-   Don't just put this url. Your url will be different. You will find it in your mongo cluster setting.
-   The old variable will be like this: `DATABASE=mongodb://127.0.0.1:27017/ecommerce
-` and your new one should look like this:
-   `DATABASE=mongodb+srv://myusername:myclusterpassword@mycluster.mongodb.net/ecommerce?retryWrites=true&w=majority`
-   you can find the mongo url by goto the mongodb atlas website and goto your database and you can find a connect button and click on that you will see the url. And modify the url quite like my one with your secret info.
-   N.B: And you must need to provide the cluster password not your account password! So find your cluster password from database access menu in mongodb atlast cloud and change accoding to you. Here I provide all image's that you can undarstand better
-   ![Alt Text](assetREADME.md/atlasUrl.png)
-   ![Alt Text](assetREADME.md/clusterPassword.png)
-   ![Alt Text](assetREADME.md/networkAccess.png)
+### Analyzing the Bundle Size
 
-6. Then come to render website. Give all of the imformations I set in the image below just change the name of your project and then must be change the branch name to `master` to `render-deploy-backend`
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-7. This is the setup for render
-   ![Alt Text](assetREADME.md/renderDeployBackendSetup.png)
+### Making a Progressive Web App
 
-8. After all the setup you finished create the web service and It will deploy the project.
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
-You can deploy frontend into vercel or netlify also. Thanks
+### Advanced Configuration
 
-`Build with 💛 by Hasan`
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+
+### Deployment
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
+### `npm run build` fails to minify
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
